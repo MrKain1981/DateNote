@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DateNote</string>
+
+    <string name="monday_short">ПН</string>
+    <string name="tuesday_short">ВТ</string>
+    <string name="wednesday_short">СР</string>
+    <string name="thursday_short">ЧТ</string>
+    <string name="friday_short">ПТ</string>
+    <string name="saturday_short">СБ</string>
+    <string name="sunday_short">ВС</string>
+    <string name="short_monday">ПН</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
