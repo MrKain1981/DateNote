@@ -100,29 +100,20 @@ public class DateListViewFragment extends Fragment {
     private static class DateCardViewHolder extends RecyclerView.ViewHolder {
 
         //private CardView item;
-        private TextView title;
-        private TextView description;
-        private TextView noteDate;
-        private TextView dayOfWeek;
+//        private TextView title;
+//        private TextView description;
+//        private TextView noteDate;
+//        private TextView dayOfWeek;
 
         public DateCardViewHolder(View itemView) {
             super(itemView);
-
-            //item = itemView.findViewById(R.id.list_item_card);
-
-
-//            title = itemView.findViewById(R.id.list_item_title);
-//            description = itemView.findViewById(R.id.list_item_description);
-//            noteDate = itemView.findViewById(R.id.list_item_note_date);
-//            dayOfWeek = itemView.findViewById(R.id.list_item_day_of_week);
-
         }
 
         private void fillDateNoteSimple(DateNoteSimple dn) {
-            title = itemView.findViewById(R.id.list_item_title);
-            description = itemView.findViewById(R.id.list_item_description);
-            noteDate = itemView.findViewById(R.id.list_item_note_date);
-            dayOfWeek = itemView.findViewById(R.id.list_item_day_of_week);
+            TextView title = itemView.findViewById(R.id.list_item_title);
+            TextView description = itemView.findViewById(R.id.list_item_description);
+            TextView noteDate = itemView.findViewById(R.id.list_item_note_date);
+            TextView dayOfWeek = itemView.findViewById(R.id.list_item_day_of_week);
 
             Date dt = dn.getDate();
             Calendar c = Calendar.getInstance();
@@ -200,7 +191,7 @@ public class DateListViewFragment extends Fragment {
         }
 
         private void fillSeparator(DateNoteSeparator dateNote) {
-            title = itemView.findViewById(R.id.list_item_separator_title);
+            TextView title = itemView.findViewById(R.id.list_item_separator_title);
             title.setText(dateNote.getTitle());
         }
 
